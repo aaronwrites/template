@@ -1,0 +1,185 @@
+:root {
+	--violet: #7a1655;
+	--violet-light: #9a4f7e;
+	--logo-green: #285154;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+figure,
+h2,
+p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.85rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+h2 {
+	font-size: calc(1.5rem * 1.15);
+	color: var(--violet);
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	color: var(--violet);
+	padding: 1.5rem 2.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+nav > ul {
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+}
+
+nav > h2 span {
+	color: var(--logo-green);
+}
+
+section {
+	padding: 1.5rem 4rem;
+}
+
+.hero {
+	padding: 1rem 2.5rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	color: var(--violet);
+}
+
+.hero > article {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.hero .hero-text {
+	max-width: 70%;
+}
+
+.locations-drop {
+	margin-top: 3rem;
+}
+
+select,
+input {
+	display: block;
+	padding: 1rem 0.75rem;
+	color: #8b8b8b;
+	width: 100%;
+}
+
+.btn {
+	padding: 0.75rem 1.5rem;
+	background-color: var(--violet);
+	color: white;
+	border: none;
+	margin-top: 1.25rem;
+}
+
+.dest-grid {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1.5rem;
+}
+
+.sub,
+.hero-text > h3 {
+	font-size: 1.15rem;
+	color: var(--violet-light);
+}
+
+.sub {
+	margin-bottom: 2rem;
+}
+
+.about-dest {
+	flex: 1 0 30%;
+	min-width: 400px;
+}
+
+.about-dest > figure {
+	width: 100%;
+	height: 250px;
+}
+
+.about-dest > figure > img {
+	object-fit: cover;
+}
+
+.dest-header {
+	margin: 1rem 0;
+	line-height: 1.25;
+}
+
+.dest-title {
+	color: #020202;
+	font-weight: lighter;
+	margin-bottom: 0.5rem;
+}
+
+.dest-sub {
+	font-weight: bold;
+}
+
+.contact {
+	background-color: #f7f7f7;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0;
+}
+
+.contact > div {
+	min-width: 500px;
+}
+
+.form-element {
+	margin-bottom: 1rem;
+}
+
+.form-element > input,
+.form-element > select {
+	background-color: #f7f7f7;
+	border: 1px solid rgb(168, 166, 166);
+}
+
+.form-element > label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+	.hero {
+		grid-template-columns: repeat(10, 1fr);
+		padding: 0.5rem 0 1.5rem 4rem;
+	}
+	.hero > article {
+		grid-column: 1/5;
+		grid-row: 1/2;
+		order: 1;
+	}
+
+	.hero > figure {
+		grid-column: 4/11;
+		grid-row: 1/2;
+	}
+}
