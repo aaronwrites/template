@@ -78,6 +78,7 @@ section {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
+	padding-left: 2.25rem;
 }
 
 .hero .hero-text {
@@ -182,6 +183,9 @@ input {
 	}
 	.dest-grid {
 		flex-flow: column nowrap;
+	}
+	.hero > article {
+		padding-left: 0;
 	}
 }
 
