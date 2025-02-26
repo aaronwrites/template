@@ -194,7 +194,6 @@ input {
 
 @media (min-width: 1200px) {
 	nav {
-		padding: 1.5rem 2.25rem;
 		justify-content: space-between;
 		flex-flow: row wrap;
 		row-gap: 1rem;
